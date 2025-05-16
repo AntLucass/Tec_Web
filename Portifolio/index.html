@@ -4,47 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Lucas</title>
-  <style>
-    body {
-      margin: 5%;
-      margin-bottom: 0%;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: black;
-    }
-    h1,h2,h3,h4,h5,h6{
-      color: rgb(16, 187, 193);
-    }
-    main{
-      margin: 1%;
-    }
-    p,li,figcaption{
-      color: aliceblue;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-  </style>
+  
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
   <!-- Cabeçalho -->
-  <header>
+  <header id="cabecalho">
     <h1>Portfólio Pessoal</h1>
     <p>Antonio Lucas Freire de Araújo</p>
-    
+    <nav>
+        <a href="#sobre-mim"> Sobre Mim </a> |
+        <a href="#projetos"> Projetos </a> |
+        <a href="#habilidades"> Habilidades </a> |
+        <a href="#contatos"> Contatos </a>
+    </nav>
   </header>
 
   <!-- Conteúdo Principal -->
   <main>
     <section id="sobre-mim">
       <h2>Sobre Mim</h2>
-      <p>Programador com experiência em algumas linguagens e frameworks <br> 
-        foco no desenvolvimento back-end, área pela qual tenho mais afinidade<br>
-        Atualmente, estou cursando Engenharia de Computação na UFC e <br>
-        busco ampliar meus conhecimentos por meio de novas experiências, <br>
+      <p>Programador com experiência em algumas linguagens e frameworks 
+        foco no desenvolvimento back-end, área pela qual tenho mais afinidade
+        Atualmente, estou cursando Engenharia de Computação na UFC e 
+        busco ampliar meus conhecimentos por meio de novas experiências, 
         conhecendo novos conceitos, e sabendo aplicá-los.</p>
     </section>
 
@@ -53,7 +38,7 @@
 
     <section id="projetos">
       <h2>Projetos</h2>
-      <article>
+      <article class="projs">
         <h3>O Resgate dos Alunos V2</h3>
         <p>Projeto para a disciplina de tecnicas de programação.<br> 
             Nele você encontra um plano com alunos e bugs, em posições aleatorias, <br> 
@@ -69,7 +54,7 @@
 
      
       <br>
-      <article>
+      <article class="projs">
         <h3>Cannonball Game</h3>
         <h3>(Colaboração)</h3>
         <p>Projeto feito em equipe para a disciplina de computação gráfica utilizando Three.js. e Cannon.js. 
@@ -86,21 +71,33 @@
 
       <br>
       <hr>
+    </section>
 
     <section id="habilidades">
       <h2>Habilidades</h2>
       <ul>
-        <li>C</li>
-        <li>Java</li>
-        <li>JavaScript</li>
-        <li>MySQL</li>
-        <li>HTML</li> 
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="iconeC" width="100" height="100">
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="iconeJava" width="100" height="100">
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="iconeJavascript" width="100" height="100">
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="iconeMySql" width="100" height="100">
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="iconeHTML" width="100" height="100">
+        </li> 
         
       </ul>
-    </section>
-
+      
     <br>
     <hr>
+    </section>
+
     
     <section id="contatos">
       <h2>Contato</h2>
@@ -113,7 +110,7 @@
   </main>
 
   <!-- Rodapé -->
-  <footer>
+  <footer id="rodape">
     <p>&copy; 2025 Antonio Lucas. Todos os direitos reservados.</p>
   </footer>
 </body>
