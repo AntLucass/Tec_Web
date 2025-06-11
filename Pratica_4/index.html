@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Painel Informativo</title>
+</head>
+<body>
+    <h1>Painel Informativo Escolar</h1>
+
+    <!-- Mensagem que muda ao clicar -->
+    <p id="mensagem">Clique para alterar conteúdo:</p>
+    <p id="textoAlteravel">Vamos iniciar os estudos com uma base Matemática</p>
+    <button onclick="document.getElementById('textoAlteravel').innerText='Depois veremos um pouco de Programação'">
+        Mudar Assunto
+    </button>
+
+    <!-- Imagem que muda ao clicar -->
+    <br><br>
+    <img id="imagem" src="./img/matematica.jpg" alt="Imagem educativa" width="200">
+    <br>
+    <button onclick="document.getElementById('imagem').src='./img/programacao.webp'">
+        Mudar Imagem
+    </button>
+
+    <!-- Mostrar/Ocultar parágrafo -->
+    <br><br>
+    <p id="paragrafo">A matemática e a programação caminham lado a lado como <br> 
+        ferramentas fundamentais para resolver problemas e transformar ideias em realidade. <br>
+        Enquanto a matemática desenvolve o raciocínio lógico e a habilidade de identificar<br> 
+        padrões, a programação aplica esses conceitos na prática, permitindo criar algoritmos,<br>
+        construir softwares e automatizar tarefas. Juntas, essas disciplinas ensinam a pensar<br>
+        com clareza, estruturar soluções e inovar em um mundo cada vez mais digital.</p>
+    <button onclick="document.getElementById('paragrafo').style.display = 
+        document.getElementById('paragrafo').style.display === 'none' ? 'block' : 'none'">
+        Mostrar/Ocultar Parágrafo
+    </button>
+
+    <!-- Botão que altera seu próprio texto -->
+    <br><br>
+    <button onclick="this.innerText = this.innerText === 'Clique Me' ? 'Me Clicou' : 'Clique Me'">
+        Clique Me
+    </button>
+</body>
+</html>
