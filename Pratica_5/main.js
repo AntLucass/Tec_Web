@@ -6,6 +6,8 @@ botao.addEventListener("click", Contador);
 
 function Contador(){
     cont++;
+    
+    botao.innerText = `Clique\n ${cont}`;
     clicks.innerText = `Número de clicks: ${cont}`;
 
     if(cont%1000==0){
