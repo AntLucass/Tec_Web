@@ -1,0 +1,17 @@
+#botao{
+    background-color: antiquewhite;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+body{
+    text-align: center;
+    color: antiquewhite;
+    background-color: rgb(3, 3, 83);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
