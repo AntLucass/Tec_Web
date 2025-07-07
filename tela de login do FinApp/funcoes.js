@@ -12,7 +12,7 @@ function fazerLogin() {
     msg.textContent = "Login bem-sucedido!";
     msg.style.color = "green";
     msg.style.visibility = "visible";
-    setTimeout(() => {window.location.href = "../trab_v.alfa/index.html";},3000);
+    setTimeout(() => {window.location.href = "../trab_v.alfa/index.html";},1500);
   } else {
     msg.textContent = "E-mail ou senha errados, tente de novo";
     msg.style.color = "red";
@@ -35,7 +35,8 @@ const usuario = document.getElementById("email_c").value;
       msg.textContent = "Cadastro realizado com sucesso!";
       msg.style.color = "green";
       msg.style.visibility = 'visible';
-      setTimeout(() => {window.location.href = "/index.html"},3000);
+      setTimeout(() => {window.location.href = "../tela de login do FinApp/index.html"},1500);
+      
     }
   } else {
     msg.textContent = "Preencha todos os campos.";
